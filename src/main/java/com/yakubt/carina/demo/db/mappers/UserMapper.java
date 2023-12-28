@@ -6,7 +6,7 @@ public interface UserMapper {
 
 	void create(User user);
 
-	User findById(long id);
+	User findById(int id);
 
 	User findByUserName(String username);
 

@@ -9,7 +9,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import com.yakubt.carina.demo.db.mappers.UserMapper;
-import com.yakubt.carina.demo.db.mappers.UserPreferenceMapper;
+import com.yakubt.carina.demo.db.mappers.OrderMapper;
 
 public class ConnectionFactory {
 
@@ -35,9 +35,9 @@ public class ConnectionFactory {
 		}
 	}
 
-	public static UserPreferenceMapper getUserPreferenceMapperMapper() {
+	public static OrderMapper getOrderMapper() {
 		try (SqlSession sqlSession = ConnectionFactory.getSqlSessionFactory().openSession(true)) {
-			return sqlSession.getMapper(UserPreferenceMapper.class);
+			return sqlSession.getMapper(OrderMapper.class);
 		}
 	}
 

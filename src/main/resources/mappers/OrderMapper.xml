@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yakubt.carina.demo.db.mappers.OrderMapper">
+	<update id="create" parameterType="com.yakubt.carina.demo.db.models.Order">
+		INSERT INTO orders(user_id,name) VALUES(#{userId},#{name})
+	</update>
+	<select id="findById" parameterType="int" resultMap="orderGet">
+		SELECT id, user_id, name
+		FROM orders WHERE id = #{id}
+	</select>
+	<resultMap id="orderGet" type="com.yakubt.carina.demo.db.models.Order" autoMapping="false">
+		<id column="id" property="id"/>
+		<id column="user_id" property="userId"/>
+		<id column="name" property="name"/>
+	</resultMap>
+	<update id="delete" parameterType = "int">
+		Delete From orders where id = #{id}
+	</update>
+	<update id="update" parameterType = "com.yakubt.carina.demo.db.models.Order">
+		Update orders set user_id = #{userId} , name =#{name} WHERE id =#{id}
+	</update>
+</mapper>

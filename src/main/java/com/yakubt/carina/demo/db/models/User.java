@@ -1,87 +1,81 @@
 package com.yakubt.carina.demo.db.models;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class User {
 
-	private Long id;
-	private String username;
-	private String password;
-	private String email;
-	private String firstName;
-	private String lastName;
-	private Status status;
-	private List<UserPreference> preferences = new ArrayList<>();
+    private int id;
 
-	public User() {
-	}
+    private String userName;
 
-	public enum Status {
-		ACTIVE, INACTIVE
-	}
+    private String password;
 
-	public Long getId() {
-		return id;
-	}
+    private String firstName;
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    private String lastName;
 
-	public String getUsername() {
-		return username;
-	}
+    private String zip;
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+    List<Integer> orders;
 
-	public String getPassword() {
-		return password;
-	}
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public User() {
 
-	public String getEmail() {
-		return email;
-	}
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public int getId() {
+        return id;
+    }
 
-	public String getFirstName() {
-		return firstName;
-	}
+    public void setId(int id) {
+        this.id = id;
+    }
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
-	public String getLastName() {
-		return lastName;
-	}
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+    public String getLastName() {
+        return lastName;
+    }
 
-	public List<UserPreference> getPreferences() {
-		return preferences;
-	}
+    public String getFirstName() {
+        return firstName;
+    }
 
-	public void setPreferences(List<UserPreference> preferences) {
-		this.preferences = preferences;
-	}
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-	public Status getStatus() {
-		return status;
-	}
+    public String getPassword() {
+        return password;
+    }
 
-	public void setStatus(Status status) {
-		this.status = status;
-	}
+    public List<Integer> getOrders() {
+        return orders;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public String getZip() {
+        return zip;
+    }
+
+    public void setOrders(List<Integer> orders) {
+        this.orders = orders;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public void setZip(String zip) {
+        this.zip = zip;
+    }
 }
