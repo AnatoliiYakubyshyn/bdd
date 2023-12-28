@@ -1,0 +1,13 @@
+[2023-12-28 04:00:42] [1] [INFO] Starting driver session...
+[2023-12-28 04:00:48] [1] [INFO] Driver session started.
+[2023-12-28 04:00:48] [1] [INFO] INFO: opening url 'https://www.saucedemo.com/'
+[2023-12-28 04:00:52] [1] [INFO] PASS: keys 'standard_user' are sent to element 'userField'.
+[2023-12-28 04:00:53] [1] [INFO] PASS: keys 'secret_sauce' are sent to element 'passwordField'.
+[2023-12-28 04:00:55] [1] [INFO] PASS: element 'loginBtn' is clicked.
+[2023-12-28 04:00:55] [1] [INFO] PASS: element 'addToCartBtn' is clicked.
+[2023-12-28 04:00:56] [1] [INFO] PASS: element 'addToCartBtn' is clicked.
+[2023-12-28 04:00:57] [1] [INFO] PASS: element 'productCart' is clicked.
+[2023-12-28 04:00:57] [1] [INFO] PASS: element 'checkout' is clicked.
+[2023-12-28 04:01:18] [1] [ERROR] FAIL: type - waitCondition for element 'firstNameField (By.id: firstName)' not satisfied!
+[2023-12-28 04:01:18] [1] [INFO] In  @After takeScreenshotOfFailure
+[2023-12-28 04:01:18] [1] [ERROR] Cucumber Scenario FAILED! Creating screenshot.
