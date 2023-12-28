@@ -29,16 +29,16 @@ public class ConnectionFactory {
 		return factory;
 	}
 
-	public static UserMapper getUserMapper() {
-		try (SqlSession sqlSession = ConnectionFactory.getSqlSessionFactory().openSession(true)) {
-			return sqlSession.getMapper(UserMapper.class);
-		}
-	}
-
-	public static OrderMapper getOrderMapper() {
-		try (SqlSession sqlSession = ConnectionFactory.getSqlSessionFactory().openSession(true)) {
-			return sqlSession.getMapper(OrderMapper.class);
-		}
-	}
+//	public static UserMapper getUserMapper() {
+//		try (SqlSession sqlSession = ConnectionFactory.getSqlSessionFactory().openSession(true)) {
+//			return sqlSession.getMapper(UserMapper.class);
+//		}
+//	}
+//
+//	public static OrderMapper getOrderMapper() {
+//		try (SqlSession sqlSession = ConnectionFactory.getSqlSessionFactory().openSession(true)) {
+//			return sqlSession.getMapper(OrderMapper.class);
+//		}
+//	}
 
 }

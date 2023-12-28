@@ -19,7 +19,7 @@ public class HomePage extends AbstractPage {
     @FindBy(id = "login-button")
     private ExtendedWebElement loginBtn;
 
-    protected HomePage(WebDriver driver) {
+    public HomePage(WebDriver driver) {
         super(driver);
     }
 

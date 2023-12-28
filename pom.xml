@@ -104,6 +104,17 @@
 			<artifactId>postgresql</artifactId>
 			<version>42.5.3</version>
 		</dependency>
+		<dependency>
+			<groupId>com.zebrunner</groupId>
+			<artifactId>carina-cucumber</artifactId>
+			<version>1.1.5</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.33</version>
+		</dependency>
 	</dependencies>
 
 	<build>
