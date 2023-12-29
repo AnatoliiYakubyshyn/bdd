@@ -2,8 +2,6 @@ package com.yakubt.carina.demo.cucumber.steps;
 
 import java.util.List;
 
-import com.yakubt.carina.demo.gui.pages.desktop.CartPage;
-import com.yakubt.carina.demo.gui.pages.desktop.CheckoutPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -12,6 +10,8 @@ import org.apache.ibatis.session.SqlSession;
 import org.testng.Assert;
 
 import com.yakubt.carina.demo.gui.components.ProductItem;
+import com.yakubt.carina.demo.gui.pages.desktop.CartPage;
+import com.yakubt.carina.demo.gui.pages.desktop.CheckoutPage;
 import com.yakubt.carina.demo.gui.pages.desktop.HomePage;
 import com.yakubt.carina.demo.gui.pages.desktop.ProductsPage;
 import com.yakubt.carina.demo.db.mappers.UserMapper;
