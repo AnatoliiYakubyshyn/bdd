@@ -1,0 +1,16 @@
+[2023-12-28 04:06:54] [1] [INFO] Starting driver session...
+[2023-12-28 04:07:00] [1] [INFO] Driver session started.
+[2023-12-28 04:07:01] [1] [INFO] INFO: opening url 'https://www.saucedemo.com/'
+[2023-12-28 04:07:05] [1] [INFO] PASS: keys 'standard_user' are sent to element 'userField'.
+[2023-12-28 04:07:05] [1] [INFO] PASS: keys 'secret_sauce' are sent to element 'passwordField'.
+[2023-12-28 04:07:07] [1] [INFO] PASS: element 'loginBtn' is clicked.
+[2023-12-28 04:07:08] [1] [INFO] PASS: element 'addToCartBtn' is clicked.
+[2023-12-28 04:07:09] [1] [INFO] PASS: element 'addToCartBtn' is clicked.
+[2023-12-28 04:07:09] [1] [INFO] PASS: element 'productCart' is clicked.
+[2023-12-28 04:07:10] [1] [INFO] PASS: element 'checkout' is clicked.
+[2023-12-28 04:07:10] [1] [INFO] PASS: keys 'Vasyl' are sent to element 'firstNameField'.
+[2023-12-28 04:07:11] [1] [INFO] PASS: keys 'Petrenko' are sent to element 'lastNameField'.
+[2023-12-28 04:07:12] [1] [INFO] PASS: keys '02064' are sent to element 'zipField'.
+[2023-12-28 04:07:12] [1] [INFO] PASS: element 'continueBtn' is clicked.
+[2023-12-28 04:07:14] [1] [INFO] PASS: element 'finishBtn' is clicked.
+[2023-12-28 04:07:14] [1] [INFO] In  @After takeScreenshotOfFailure

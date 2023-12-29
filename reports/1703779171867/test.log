@@ -1,0 +1,11 @@
+[2023-12-28 03:59:31] [1] [INFO] Starting driver session...
+[2023-12-28 03:59:38] [1] [INFO] Driver session started.
+[2023-12-28 03:59:38] [1] [INFO] INFO: opening url 'https://www.saucedemo.com/'
+[2023-12-28 03:59:42] [1] [INFO] PASS: keys 'standard_user' are sent to element 'userField'.
+[2023-12-28 03:59:42] [1] [INFO] PASS: keys 'secret_sauce' are sent to element 'passwordField'.
+[2023-12-28 03:59:44] [1] [INFO] PASS: element 'loginBtn' is clicked.
+[2023-12-28 03:59:45] [1] [INFO] PASS: element 'addToCartBtn' is clicked.
+[2023-12-28 03:59:46] [1] [INFO] PASS: element 'addToCartBtn' is clicked.
+[2023-12-28 04:00:07] [1] [ERROR] FAIL: click - waitCondition for element 'productCart (By.xpath: shopping_cart_container)' not satisfied!
+[2023-12-28 04:00:07] [1] [INFO] In  @After takeScreenshotOfFailure
+[2023-12-28 04:00:07] [1] [ERROR] Cucumber Scenario FAILED! Creating screenshot.

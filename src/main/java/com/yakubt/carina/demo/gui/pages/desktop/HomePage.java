@@ -1,78 +1,31 @@
 package com.yakubt.carina.demo.gui.pages.desktop;
 
-import java.lang.invoke.MethodHandles;
-import java.util.List;
-
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import com.yakubt.carina.demo.gui.components.footer.FooterMenu;
-import com.yakubt.carina.demo.gui.pages.common.AllBrandsPageBase;
-import com.yakubt.carina.demo.gui.pages.common.BrandModelsPageBase;
-import com.yakubt.carina.demo.gui.pages.common.CompareModelsPageBase;
-import com.yakubt.carina.demo.gui.pages.common.HomePageBase;
-import com.zebrunner.carina.utils.factory.DeviceType;
+import com.yakubt.carina.demo.db.models.User;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
+import com.zebrunner.carina.webdriver.gui.AbstractPage;
 
-@DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = HomePageBase.class)
-public class HomePage extends HomePageBase {
+public class HomePage extends AbstractPage {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
+    @FindBy(id = "user-name")
+    private ExtendedWebElement userField;
 
-    @FindBy(id = "footmenu")
-    private FooterMenu footerMenu;
+    @FindBy(id = "password")
+    private ExtendedWebElement passwordField;
 
-    @FindBy(xpath = "//div[contains(@class, 'brandmenu-v2')]//a")
-    private List<ExtendedWebElement> brandLinks;
-
-    @FindBys({ @FindBy(xpath = "//p[contains(@class, 'pad')]"), @FindBy(xpath = ".//*[contains(@class, 'pad-single')]") })
-    private ExtendedWebElement phoneFinderButton;
-
-    @FindBy(className = "news-column-index")
-    private ExtendedWebElement newsColumn;
-
-    @FindBy(xpath = "//span[text()='All brands']//parent::a")
-    private ExtendedWebElement allBrandsButton;
+    @FindBy(id = "login-button")
+    private ExtendedWebElement loginBtn;
 
     public HomePage(WebDriver driver) {
         super(driver);
-        setUiLoadedMarker(newsColumn);
     }
 
-    @Override
-    public FooterMenu getFooterMenu() {
-        return footerMenu;
+    public void login(User user) {
+        userField.type(user.getUserName());
+        passwordField.type(user.getPassword());
+        loginBtn.check();
     }
-
-    @Override
-    public CompareModelsPageBase openComparePage() {
-        return getFooterMenu().openComparePage();
-    }
-
-    @Override
-    public BrandModelsPageBase selectBrand(String brand) {
-        LOGGER.info("selecting '" + brand + "' brand...");
-        for (ExtendedWebElement brandLink : brandLinks) {
-            String currentBrand = brandLink.getText();
-            LOGGER.info("currentBrand: " + currentBrand);
-            if (brand.equalsIgnoreCase(currentBrand)) {
-                brandLink.click();
-                return initPage(driver, BrandModelsPageBase.class);
-            }
-        }
-        throw new RuntimeException("Unable to open brand: " + brand);
-    }
-
-    public ExtendedWebElement getPhoneFinderButton() {
-        return phoneFinderButton;
-    }
-
-    public AllBrandsPageBase openAllBrandsPage(){
-        allBrandsButton.click();
-        return initPage(driver, AllBrandsPageBase.class);
-    }
-
 }

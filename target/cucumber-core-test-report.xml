@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite name="Cucumber" time="25.215" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Check checkout feature" name="Check checkout process for norma user" time="24.605">
+<system-out><![CDATA[
+Given I am on main page.....................................................passed
+When I login as normal user.................................................passed
+Then Product page is opened.................................................passed
+When I make order...........................................................passed
+Then I have successful order message........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

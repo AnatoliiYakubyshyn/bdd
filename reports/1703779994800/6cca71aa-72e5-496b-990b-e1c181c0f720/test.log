@@ -1,0 +1,18 @@
+[2023-12-28 04:13:19] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-12-28 04:13:19] [24] [INFO] TEST [Check checkout feature (Check checkout process for norma user)] STARTED at [18:13:19 2023-12-28]
+[2023-12-28 04:13:19] [24] [INFO] Starting driver session...
+[2023-12-28 04:13:26] [24] [INFO] Driver session started.
+[2023-12-28 04:13:26] [24] [INFO] INFO: opening url 'https://www.saucedemo.com/'
+[2023-12-28 04:13:30] [24] [INFO] PASS: keys 'standard_user' are sent to element 'userField'.
+[2023-12-28 04:13:31] [24] [INFO] PASS: keys 'secret_sauce' are sent to element 'passwordField'.
+[2023-12-28 04:13:33] [24] [INFO] PASS: element 'loginBtn' is clicked.
+[2023-12-28 04:13:35] [24] [INFO] PASS: element 'addToCartBtn' is clicked.
+[2023-12-28 04:13:36] [24] [INFO] PASS: element 'addToCartBtn' is clicked.
+[2023-12-28 04:13:38] [24] [INFO] PASS: element 'productCart' is clicked.
+[2023-12-28 04:13:39] [24] [INFO] PASS: element 'checkout' is clicked.
+[2023-12-28 04:13:40] [24] [INFO] PASS: keys 'Vasyl' are sent to element 'firstNameField'.
+[2023-12-28 04:13:41] [24] [INFO] PASS: keys 'Petrenko' are sent to element 'lastNameField'.
+[2023-12-28 04:13:43] [24] [INFO] PASS: keys '02064' are sent to element 'zipField'.
+[2023-12-28 04:13:44] [24] [INFO] PASS: element 'continueBtn' is clicked.
+[2023-12-28 04:13:45] [24] [INFO] PASS: element 'finishBtn' is clicked.
+[2023-12-28 04:13:45] [24] [INFO] TEST [Check checkout feature (Check checkout process for norma user)] PASSED at [18:13:45 2023-12-28]

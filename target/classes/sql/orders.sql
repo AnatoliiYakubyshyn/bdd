@@ -1,0 +1,6 @@
+CREATE TABLE orders(
+    id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    user_id INTEGER NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+)

@@ -1,0 +1,5 @@
+[2023-12-28 03:53:52] [1] [INFO] Starting driver session...
+[2023-12-28 03:53:58] [1] [INFO] Driver session started.
+[2023-12-28 03:53:58] [1] [INFO] INFO: opening url 'https://www.saucedemo.com/'
+[2023-12-28 03:54:01] [1] [INFO] In  @After takeScreenshotOfFailure
+[2023-12-28 03:54:01] [1] [ERROR] Cucumber Scenario FAILED! Creating screenshot.

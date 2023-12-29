@@ -1,0 +1,7 @@
+
+Scenario: Check checkout process for norma user [90m# src/test/resources/features/sauceDemo.feature:3[0m
+  [32mGiven [0m[32mI am on main page[0m                       [90m# com.yakubt.carina.demo.cucumber.steps.SauceSteps.iAmOnMainPage()[0m
+  [32mWhen [0m[32mI login as normal user[0m                   [90m# com.yakubt.carina.demo.cucumber.steps.SauceSteps.loginAsNormalUser()[0m
+  [32mThen [0m[32mProduct page is opened[0m                   [90m# com.yakubt.carina.demo.cucumber.steps.SauceSteps.productPageOpenedCheck()[0m
+  [32mWhen [0m[32mI make order[0m                             [90m# com.yakubt.carina.demo.cucumber.steps.SauceSteps.makeOrder()[0m
+  [32mThen [0m[32mI have successful order message[0m          [90m# com.yakubt.carina.demo.cucumber.steps.SauceSteps.checkSuccessOrder()[0m
