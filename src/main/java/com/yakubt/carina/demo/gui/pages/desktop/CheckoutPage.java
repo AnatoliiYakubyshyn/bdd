@@ -27,6 +27,9 @@ public class CheckoutPage extends AbstractPage {
     @FindBy(xpath = "//h2[text()='Thank you for your order!']")
     private ExtendedWebElement successfulOrderLabel;
 
+    @FindBy(xpath = "//div[contains(@class,'summary_subtotal_label')]")
+    private ExtendedWebElement totalSumLabel;
+
     public CheckoutPage(WebDriver driver) {
         super(driver);
     }
@@ -39,7 +42,20 @@ public class CheckoutPage extends AbstractPage {
         finishBtn.click();
     }
 
+    public void makeOrderWithoutFinishing(User user) {
+        firstNameField.type(user.getFirstName());
+        lastNameField.type(user.getLastName());
+        zipField.type(user.getZip());
+        continueBtn.click();
+    }
+
     public boolean isOrderSuccessful() {
         return successfulOrderLabel.isVisible();
+    }
+
+    public double getTotalSum() {
+        String text = totalSumLabel.getText();
+        int dolPos = text.indexOf('$');
+        return Double.parseDouble(text.substring(dolPos+1));
     }
 }

@@ -1,0 +1,16 @@
+[2023-12-29 08:47:24] [1] [INFO] Starting driver session...
+[2023-12-29 08:47:31] [1] [INFO] Driver session started.
+[2023-12-29 08:47:31] [1] [INFO] INFO: opening url 'https://www.saucedemo.com/'
+[2023-12-29 08:47:35] [1] [INFO] PASS: keys 'visual_user' are sent to element 'userField'.
+[2023-12-29 08:47:35] [1] [INFO] PASS: keys 'secret_sauce' are sent to element 'passwordField'.
+[2023-12-29 08:47:37] [1] [INFO] PASS: element 'loginBtn' is clicked.
+[2023-12-29 08:47:38] [1] [INFO] PASS: element 'addToCartBtn' is clicked.
+[2023-12-29 08:47:39] [1] [INFO] PASS: element 'addToCartBtn' is clicked.
+[2023-12-29 08:47:40] [1] [INFO] PASS: element 'productCart' is clicked.
+[2023-12-29 08:47:40] [1] [INFO] PASS: element 'checkout' is clicked.
+[2023-12-29 08:47:41] [1] [INFO] PASS: keys 'Vasyl' are sent to element 'firstNameField'.
+[2023-12-29 08:47:42] [1] [INFO] PASS: keys 'Vasylko' are sent to element 'lastNameField'.
+[2023-12-29 08:47:44] [1] [INFO] PASS: keys '02064' are sent to element 'zipField'.
+[2023-12-29 08:47:45] [1] [INFO] PASS: element 'continueBtn' is clicked.
+[2023-12-29 08:47:45] [1] [INFO] In  @After takeScreenshotOfFailure
+[2023-12-29 08:47:45] [1] [ERROR] Cucumber Scenario FAILED! Creating screenshot.
